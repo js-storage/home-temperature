@@ -871,8 +871,9 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener('change', render);
 if (typeof Chart === 'undefined') {
   showErr('Nepodařilo se načíst knihovnu Chart.js z CDN (offline?).');
 } else {
-  if (!state.demo && (!state.channel || !state.key)) {
-    $('loadInfo').textContent = 'Zadejte kanál a klíč v Nastavení, nebo zkuste Demo.';
+  // Klic neni povinny - verejny kanal (vychozi) se nacte rovnou, bez dialogu.
+  if (!state.demo && !state.channel) {
+    $('loadInfo').textContent = 'Zadejte kanál v Nastavení, nebo zkuste Demo.';
     openSettings();
   } else load();
 }
