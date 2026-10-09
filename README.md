@@ -7,7 +7,7 @@ a zařízení je posílá do veřejného ThingSpeak kanálu
 **Stránka:** https://js-storage.github.io/home-temperature/
 
 **Druhá stránka – vodoměr, teplá voda (M5Stack Basic):** https://js-storage.github.io/home-temperature/vodomer/
-(kanál [3529108](https://thingspeak.mathworks.com/channels/3529108), navíc stav baterie z field7)
+(kanál [3529108](https://thingspeak.mathworks.com/channels/3529108), navíc stav baterie z field6)
 
 - graf teploty za 24 h / 7 dní, maximum, minimum a průměr
 - epizody nad prahem (výchozí 35 °C) a typická denní doba překročení
